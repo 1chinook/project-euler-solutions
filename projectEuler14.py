@@ -19,3 +19,4 @@ for number in range(2,1000000):
 
 
 print(f"{record_number} and {record_lenght}")
+
