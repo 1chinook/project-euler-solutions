@@ -1,19 +1,43 @@
 # Project Euler Solutions
 
-Project Euler problemleri için bağımsız Python çözümleri. Betikler sayı teorisi, kombinatorik ve diziler gibi konulardaki alıştırmaları içerir.
+Project Euler matematik ve algoritma problemleri için bağımsız Python 3 çözümleri deposu.
 
-## Kurulum ve çalıştırma
+| Alan | Değer |
+|---|---|
+| **Kategori** | CLI / Algoritma |
+| **Teknoloji** | Python 3 |
+| **Port / URL** | — (Web sunucusu gerektirmez) |
+| **Başlatıcı** | `python projectEuler<N>.py` |
+| **Doğrulama** | `python -m py_compile projectEuler*.py` |
 
-Python 3 ile çalıştırın. Örneğin:
+## Özellikler
 
-```sh
-python projectEuler1.py
+- Sayı teorisi, kombinatorik, ızgara tarama ve diziler üzerine 20 bağımsız Python çözümü.
+- Tutarlı dosya adlandırması: `projectEuler<ProblemNo>.py`.
+- Problem metinleri için [Project Euler Arşivi](https://projecteuler.net/archives) referans alınır.
+
+## Klasör Yapısı
+
+```text
+project-euler-solutions/
+├── projectEuler1.py … projectEuler30.py   # Problem #1–#30 çözümleri
+├── projectEuler836.py                     # Problem #836 çözümü
+├── AGENTS.md                              # Mühendislik kuralları
+├── .gitignore                             # Git yoksayma kuralları
+└── README.md
 ```
 
-## Kullanım
+## Kurulum ve Çalıştırma
 
-Problem numarası dosya adında yer alır. Problem metinleri için [Project Euler arşivine](https://projecteuler.net/archives) bakın. Bazı betikler çalışma aşamasında olabilir.
+Python 3 kurulu olmalıdır; harici paket gerekmez.
 
-## Proje yapısı
+```sh
+python projectEuler11.py
+python projectEuler12.py
+```
 
-- `projectEuler*.py` ve `ProjectEuler29.py` — problem başına bir betik.
+## Testler ve Doğrulama
+
+```sh
+python -m py_compile projectEuler*.py
+```
